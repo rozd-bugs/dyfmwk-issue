@@ -1,0 +1,23 @@
+<extension xmlns="http://ns.adobe.com/air/extension/29.0">
+  <id>com.github.rozd.bugs.dyfmwk</id>
+  <versionNumber>0.0.2</versionNumber>
+  <platforms>
+    <platform name="iPhone-ARM">
+      <applicationDeployment>
+        <nativeLibrary>libDYFMWK.a</nativeLibrary>
+        <initializer>DYFMWKInitializer</initializer>
+        <finalizer>DYFMWKFinalizer</finalizer>
+      </applicationDeployment>
+    </platform>
+    <platform name="iPhone-x86">
+      <applicationDeployment>
+        <nativeLibrary>libDYFMWKSimulator.a</nativeLibrary>
+        <initializer>DYFMWKInitializer</initializer>
+        <finalizer>DYFMWKFinalizer</finalizer>
+      </applicationDeployment>
+    </platform>
+    <platform name="default">
+      <applicationDeployment/>
+    </platform>
+  </platforms>
+</extension>
